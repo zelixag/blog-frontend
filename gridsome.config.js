@@ -17,17 +17,17 @@ module.exports = {
     {
       use: '@gridsome/source-strapi',
       options: {
-        apiURL: 'http://127.0.0.1:1337',
+        apiURL: process.env.GRIDSOME_API_URl,
         queryLimit: 1000, // Defaults to 100
         contentTypes: ['posts', 'tag'],
         // typeName
         singleTypes: ['general'],
         // Possibility to login with a Strapi user,
         // when content types are not publicly available (optional).
-        // loginData: {
-        //   identifier: '',
-        //   password: ''
-        // }
+        loginData: {
+          identifier: 'zlx1433@gmail.com',
+          password: 'Qwer1234$'
+        }
       }
     }
   ],

@@ -129,7 +129,7 @@ export default {
       try {
         const {data} = axios({
           method: 'POST',
-          url: 'http://127.0.0.1:1337/contacts',
+          url: `${GRIDSOME_API_URl}/contacts`,
           data: this.form
         })
         globalThis.alert('发送成功')
